@@ -13,4 +13,4 @@ alias ls='lsd'
 #└┐┌┘├─┤├┬┘│├─┤├┴┐│  ├┤ 
 # └┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘
 export PATH="$PATH:/Users/mymac/bin"
-neowofetch --gap -30 --ascii "$(fortune | pokemonsay -w 30)"
+neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"
