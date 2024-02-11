@@ -1,0 +1,9 @@
+set linenumbers
+set nowrap
+set softwrap
+set titlecolor white,blue 
+set numbercolor yellow,black 
+set functioncolor white
+set statuscolor white,red
+
+include "/usr/local/share/nano/*.nanorc"
