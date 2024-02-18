@@ -1,7 +1,7 @@
 #┌─┐┬─┐┌─┐┌┬┐┌─┐┌┬┐
 #├─┘├┬┘│ ││││├─┘ │ 
 #┴  ┴└─└─┘┴ ┴┴   ┴ 
-PROMPT="%K{white}%F{black}  %n %f%k%K{cyan}%F{white}%f%k%K{cyan}%F{black} ⌖ %~ %f%k%F{cyan}%f"
+eval "$(starship init zsh)"
 
 #┌─┐┬  ┬┌─┐┌─┐
 #├─┤│  │├─┤└─┐
