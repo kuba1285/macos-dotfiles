@@ -187,7 +187,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>20.360846077127658</real>
+			<real>14.582654587765949</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -551,7 +551,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>HackNFM-Regular 20</string>
+			<string>HackNFM-Regular 22</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -597,7 +597,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.20196143617021278</real>
+			<real>0.4957529920212766</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
