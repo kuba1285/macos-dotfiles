@@ -3,7 +3,6 @@
 # confirmations, etc.) must go above this block; everything else may go below.
 
 #Display specs
-neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -107,5 +106,5 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 cheatsh() { curl "http://cheat.sh/$1"; }
 alias ls='lsd'
-export PATH="$PATH:/Users/mymac/bin"
 eval "$(starship init zsh)"
+
