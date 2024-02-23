@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENT=$(cd $(dirname $0)/../; pwd)
+BIN=$(cd $(dirname $0)/../; pwd)
 
 echo "Installing Xcode..."
 xcode-select --install
