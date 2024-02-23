@@ -111,5 +111,9 @@ skhd --start-service
 # Generate Brewfile
 brew bundle dump
 
+# Prevent Finder from creating .DS_Store (requires restart of Finder for setting to take effect)
+defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+killall Finder
+
 # Script is done
 echo -e "$CNT - Script had completed!"
