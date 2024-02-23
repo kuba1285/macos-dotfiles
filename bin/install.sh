@@ -113,7 +113,7 @@ fi
 yabai --start-service
 skhd --start-service
 
-# default write setting
+# Write default-write setting
 source $BIN/parse-plist
 
 # Generate miscelenaeous file
