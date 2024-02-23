@@ -107,4 +107,5 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 cheatsh() { curl "http://cheat.sh/$1"; }
 alias ls='lsd'
+export PATH="$PATH:/Users/mymac/bin"
 eval "$(starship init zsh)"
