@@ -187,7 +187,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>14.582654587765949</real>
+			<real>14.533086768617014</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -597,7 +597,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.4957529920212766</real>
+			<real>0.39931017287234033</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
