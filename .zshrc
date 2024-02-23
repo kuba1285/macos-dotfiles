@@ -106,5 +106,11 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 cheatsh() { curl "http://cheat.sh/$1"; }
 alias ls='lsd'
+alias python="python3"
+alias pip="pip3"
 eval "$(starship init zsh)"
 
+# Python3
+export PATH="$PATH:/usr/local/bin/python3"
+# installed by pip3
+export PATH="$PATH:/usr/local/opt/python@3.12/libexec/bin"
