@@ -53,11 +53,14 @@ fi
 echo -en "$CNT - Now installing CLI for Xcode."
 xcode-select --install &>> $INSTLOG
 show_progress $!
+echo -e "$COK - Installed."
 
 # Install rosetta
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install rosetta?'
 if [[ $YN = y ]] ; then
     sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --install-rosetta --agree-to-license &>> $INSTLOG
+    show_progress $!
+    echo -e "$COK - Installed."
 fi
 
 # Install homebrew
