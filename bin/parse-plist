@@ -62,7 +62,7 @@ defaults write "com.apple.AdPlatforms" "LatestPAVersion" -int 1
 defaults write "com.apple.AdPlatforms" "AppStorePAAvailable" -bool True
 defaults write "com.apple.AdPlatforms" "AdPlatformsPAAvailable" -bool True
 defaults write "com.apple.AdPlatforms" "ConfigSystemVersion" -int 1
-defaults write "com.apple.AddressBook" "ABMetaDataChangeCount" -int 186443
+defaults write "com.apple.AddressBook" "ABMetaDataChangeCount" -int 186473
 defaults write "com.apple.AddressBook" "ABDefaultSourceID" -string "DF7CFF85-0BF4-48A7-94BB-7521D3FAA9D9"
 defaults write "com.apple.AddressBook" "ABVersion" -int 1419
 defaults write "com.apple.AddressBook" "ABBirthDayVisible" -bool True
@@ -142,7 +142,7 @@ defaults write "com.apple.CharacterPaletteIM" "version" -int 1
 defaults write "com.apple.CharacterPaletteIM" "CVStartAsLargeWindow" -bool False
 defaults write "com.apple.CharacterPicker" "version" -int 1
 defaults write "com.apple.ClassKit-Settings.extension" "showClassKitPrefsPane" -bool False
-defaults write "com.apple.CloudKit" "AccountInfoValidationCounter" -int 1302
+defaults write "com.apple.CloudKit" "AccountInfoValidationCounter" -int 1303
 defaults write "com.apple.ComfortSounds" "comfortSoundsEnabled" -bool False
 defaults write "com.apple.CoreGraphics" "DisplayUseForcedGray" -bool False
 defaults write "com.apple.CoreGraphics" "DisplayUseInvertedPolarity" -bool False
@@ -152,8 +152,8 @@ defaults write "com.apple.DictionaryServices" "DCSPreferenceVersion" -int 7
 defaults write "com.apple.DiskUtility" "NSWindow Frame MainWindow" -string "287 221 1106 544 0 0 1680 1050 "
 defaults write "com.apple.DiskUtility" "NSWindow Frame OperationProgress" -string "603 417 475 180 0 0 1680 1050 "
 defaults write "com.apple.Displays-Settings.extension" "showListByDefault" -bool True
-defaults write "com.apple.FamilyCircle" "FamilyMarqueeDarkMode" -string "file:/Users/mymac/Library/Caches/FamilyCircle/FamilyMarqueeDarkMode-90F4607B-5030-41AB-AD13-0C1FD3DE8167@1x.png"
-defaults write "com.apple.FamilyCircle" "FamilyMarqueeLightMode" -string "file:/Users/mymac/Library/Caches/FamilyCircle/FamilyMarqueeLightMode-90F4607B-5030-41AB-AD13-0C1FD3DE8167@1x.png"
+defaults write "com.apple.FamilyCircle" "FamilyMarqueeDarkMode" -string "file:/Users/mymac/Library/Caches/FamilyCircle/FamilyMarqueeDarkMode-24E4BF12-DB30-4B10-B39E-B1DC34672318@1x.png"
+defaults write "com.apple.FamilyCircle" "FamilyMarqueeLightMode" -string "file:/Users/mymac/Library/Caches/FamilyCircle/FamilyMarqueeLightMode-24E4BF12-DB30-4B10-B39E-B1DC34672318@1x.png"
 defaults write "com.apple.FolderActionsDispatcher" "folderActionsEnabled" -bool False
 defaults write "com.apple.FontBook" "showPreferredLanguages" -bool True
 defaults write "com.apple.FontBook" "NSWindow Frame font_preview_window" -string "1030 586 500 428 0 0 2560 1600 "
@@ -193,7 +193,7 @@ defaults write "com.apple.Maps" "LastAnnouncementsURL" -string "https://gspe35-s
 defaults write "com.apple.Maps" "MigratedNavigoAppPreferences" -bool True
 defaults write "com.apple.Maps" "AnnouncementsETag" -string ""c0c6bbb77ed28231b638ba3aa09e695a386e1742""
 defaults write "com.apple.Maps" "NavigationVoiceGuidanceLevelCycling" -int 2
-defaults write "com.apple.Maps.mapssyncd" "CKStartupTime" -int 1707608340
+defaults write "com.apple.Maps.mapssyncd" "CKStartupTime" -int 1708704964
 defaults write "com.apple.MassStorageCamera" "FilenamePrefix" -string "IMG_"
 defaults write "com.apple.MassStorageCamera" "NextFilenameCount" -int 0
 defaults write "com.apple.Music" "ILMediaBrowserMediaType" -int 0
@@ -592,11 +592,11 @@ defaults write "com.apple.dock" "version" -int 1
 defaults write "com.apple.dock" "magnification" -bool False
 defaults write "com.apple.dock" "largesize" -int 128
 defaults write "com.apple.dock" "show-recents" -bool False
-defaults write "com.apple.dock" "mod-count" -int 1729
-defaults write "com.apple.dock" "trash-full" -bool False
+defaults write "com.apple.dock" "mod-count" -int 1738
+defaults write "com.apple.dock" "trash-full" -bool True
 defaults write "com.apple.dock" "expose-animation-duration" -int 0
 defaults write "com.apple.dock" "loc" -string "ja_JP:(null)"
-defaults write "com.apple.dock" "lastShowIndicatorTime" -float 729681125.047665
+defaults write "com.apple.dock" "lastShowIndicatorTime" -float 730408200.487184
 defaults write "com.apple.donotdisturbd" "CKStartupTime" -int 1708704964
 defaults write "com.apple.driver.AppleBluetoothMultitouch.mouse" "MouseOneFingerDoubleTapGesture" -int 0
 defaults write "com.apple.driver.AppleBluetoothMultitouch.mouse" "MouseTwoFingerHorizSwipeGesture" -int 2
@@ -677,13 +677,13 @@ defaults write "com.apple.finder" "FXQuickActionsConfigUpgradeLevel" -int 3
 defaults write "com.apple.finder" "BulkRenameName" -string "ファイル "
 defaults write "com.apple.finder" "FXPreferredViewStyle" -string "icnv"
 defaults write "com.apple.finder" "FXConnectToBounds" -string "{{477, 522}, {486, 231}}"
-defaults write "com.apple.finder" "SidebarWidth" -int 143
+defaults write "com.apple.finder" "SidebarWidth" -int 128
 defaults write "com.apple.finder" "ShowSidebar" -bool True
 defaults write "com.apple.finder" "TagsCloudSerialNumber" -int 3
 defaults write "com.apple.finder" "ShowPreviewPane" -bool True
 defaults write "com.apple.finder" "BulkRenameStartIndex" -int 1
 defaults write "com.apple.finder" "FXSidebarUpgradedToTenFourteen" -bool True
-defaults write "com.apple.finder" "LastTrashState" -bool False
+defaults write "com.apple.finder" "LastTrashState" -bool True
 defaults write "com.apple.finder" "ShowExternalHardDrivesOnDesktop" -bool True
 defaults write "com.apple.finder" "GoToField" -string "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/"
 defaults write "com.apple.finder" "FK_AppCentricShowSidebar" -bool True
@@ -705,7 +705,7 @@ defaults write "com.apple.finder" "BulkRenameAddNumberTo" -int 0
 defaults write "com.apple.finder" "FXLastSearchScope" -string "SCcf"
 defaults write "com.apple.finder" "InspectorWindow.Location" -string "{10, 9}"
 defaults write "com.apple.finder" "TagsColumnWidth" -int 190
-defaults write "com.apple.finder" "SidebarPlacesSectionDisclosedState" -bool False
+defaults write "com.apple.finder" "SidebarPlacesSectionDisclosedState" -bool True
 defaults write "com.apple.finder" "FXToolbarUpgradedToTenEight" -int 1
 defaults write "com.apple.finder" "FXICloudLoggedIn" -bool True
 defaults write "com.apple.finder" "NSNavLastRootDirectory" -string "/Applications"
@@ -1076,7 +1076,7 @@ defaults write "com.apple.sharingd" "AirDropRandomHashUUIDKey3" -string "29E3B4F
 defaults write "com.apple.sharingd" "AirDropRandomHashUUIDKey1" -string "953566D9-9874-4156-B405-07E09E2FCF98"
 defaults write "com.apple.shortcuts" "CKStartupTime" -int 1659987919
 defaults write "com.apple.siri.VoiceShortcuts" "VCLSDatabaseUUIDKey" -string "9FDF585D-9069-463A-B3D5-5BA9A9F4D36B"
-defaults write "com.apple.siri.VoiceShortcuts" "VCLSDataSequenceKey" -int 10699
+defaults write "com.apple.siri.VoiceShortcuts" "VCLSDataSequenceKey" -int 10775
 defaults write "com.apple.siri.media-indexer" "MISpanMatcherType" -int 0
 defaults write "com.apple.siri.shortcuts" "WFDidUnconflictShortcuts" -bool True
 defaults write "com.apple.siri.shortcuts" "LegacyShortcutsZoneSubscriptionUnsubscribed" -bool True
@@ -1277,47 +1277,56 @@ defaults write "com.google.Chrome" "LastRunAppBundlePath" -string "/Applications
 defaults write "com.google.Chrome" "NSNavLastRootDirectory" -string "~/Downloads"
 defaults write "com.google.Chrome" "NSNavPanelExpandedSizeForOpenMode" -string "{800, 484}"
 defaults write "com.google.Keystone.Agent" "checkInterval" -int 18000
-defaults write "com.googlecode.iterm2" "NSWindow Frame NSColorPanel" -string "0 81 224 278 0 0 2560 1600 "
-defaults write "com.googlecode.iterm2" "NSWindow Frame NSNavPanelAutosaveName" -string "952 725 800 448 0 0 2560 1600 "
-defaults write "com.googlecode.iterm2" "NSNavLastRootDirectory" -string "~/Documents"
-defaults write "com.googlecode.iterm2" "SUHasLaunchedBefore" -bool True
-defaults write "com.googlecode.iterm2" "NSQuotedKeystrokeBinding" -string ""
 defaults write "com.googlecode.iterm2" "NoSyncIgnoreSystemWindowRestoration" -bool True
 defaults write "com.googlecode.iterm2" "NoSyncRestoreWindowsCount" -int 0
-defaults write "com.googlecode.iterm2" "NSScrollViewShouldScrollUnderTitlebar" -bool False
-defaults write "com.googlecode.iterm2" "AppleAntiAliasingThreshold" -int 1
-defaults write "com.googlecode.iterm2" "NSNavPanelExpandedSizeForOpenMode" -string "{800, 448}"
-defaults write "com.googlecode.iterm2" "SUEnableAutomaticChecks" -bool True
-defaults write "com.googlecode.iterm2" "SUFeedURL" -string "https://iterm2.com/appcasts/final_modern.xml?shard=68"
-defaults write "com.googlecode.iterm2" "SoundForEsc" -bool False
-defaults write "com.googlecode.iterm2" "DimInactiveSplitPanes" -bool True
-defaults write "com.googlecode.iterm2" "DimBackgroundWindows" -bool False
-defaults write "com.googlecode.iterm2" "AlternateMouseScroll" -bool True
-defaults write "com.googlecode.iterm2" "NSWindow Frame iTerm Window 0" -string "12 12 1262 1576 0 0 2560 1600 "
-defaults write "com.googlecode.iterm2" "AppleScrollAnimationEnabled" -int 0
-defaults write "com.googlecode.iterm2" "SplitPaneDimmingAmount" -float 0.39691899271844655
-defaults write "com.googlecode.iterm2" "SUFeedAlternateAppNameKey" -string "iTerm"
-defaults write "com.googlecode.iterm2" "NSWindow Frame iTerm Window 1" -string "1715 0 845 1600 0 0 2560 1600 "
-defaults write "com.googlecode.iterm2" "NoSyncNextAnnoyanceTime" -float 730433747.444086
-defaults write "com.googlecode.iterm2" "AppleSmoothFixedFontsSizeThreshold" -int 1
-defaults write "com.googlecode.iterm2" "PreventEscapeSequenceFromClearingHistory" -bool False
-defaults write "com.googlecode.iterm2" "NSScrollAnimationEnabled" -bool False
-defaults write "com.googlecode.iterm2" "NoSyncInstallationId" -string "55EE1539-9E5B-4610-9F9F-4FCF6C8585D9"
-defaults write "com.googlecode.iterm2" "ApplePressAndHoldEnabled" -bool False
-defaults write "com.googlecode.iterm2" "AppleWindowTabbingMode" -string "manual"
-defaults write "com.googlecode.iterm2" "HapticFeedbackForEsc" -bool False
-defaults write "com.googlecode.iterm2" "NoSyncLaunchExperienceControllerRunCount" -int 32
-defaults write "com.googlecode.iterm2" "NoSyncTipOfTheDayEligibilityBeganTime" -float 730260947.443895
+defaults write "com.googlecode.iterm2" "NoSyncNeverRemindPrefsChangesLostForFile_selection" -int 2
 defaults write "com.googlecode.iterm2" "Default Bookmark Guid" -string "F917F63D-03C0-4E93-BFD1-E41D5C57E330"
-defaults write "com.googlecode.iterm2" "HotkeyMigratedFromSingleToMulti" -bool True
 defaults write "com.googlecode.iterm2" "NSOverlayScrollersFallBackForAccessoryViews" -bool False
-defaults write "com.googlecode.iterm2" "SUSendProfileInfo" -bool False
-defaults write "com.googlecode.iterm2" "NoSyncLastSystemPythonVersionRequirement" -string "1.17"
-defaults write "com.googlecode.iterm2" "DimOnlyText" -bool False
-defaults write "com.googlecode.iterm2" "NoSyncLastOSVersion" -string "Version 14.2.1 (Build 23C71)"
-defaults write "com.googlecode.iterm2" "NSRepeatCountBinding" -string ""
-defaults write "com.googlecode.iterm2" "iTerm Version" -string "3.4.23"
+defaults write "com.googlecode.iterm2" "HotkeyMigratedFromSingleToMulti" -bool True
+defaults write "com.googlecode.iterm2" "SoundForEsc" -bool False
+defaults write "com.googlecode.iterm2" "NSNavPanelExpandedSizeForOpenMode" -string "{800, 448}"
+defaults write "com.googlecode.iterm2" "AlternateMouseScroll" -bool True
+defaults write "com.googlecode.iterm2" "NoSyncInstallationId" -string "55EE1539-9E5B-4610-9F9F-4FCF6C8585D9"
+defaults write "com.googlecode.iterm2" "SUFeedURL" -string "https://iterm2.com/appcasts/final_modern.xml?shard=68"
+defaults write "com.googlecode.iterm2" "SUFeedAlternateAppNameKey" -string "iTerm"
+defaults write "com.googlecode.iterm2" "NoSyncNextAnnoyanceTime" -float 730433747.444086
 defaults write "com.googlecode.iterm2" "VisualIndicatorForEsc" -bool False
+defaults write "com.googlecode.iterm2" "QuitWhenAllWindowsClosed" -bool True
+defaults write "com.googlecode.iterm2" "NSQuotedKeystrokeBinding" -string ""
+defaults write "com.googlecode.iterm2" "PrefsCustomFolder" -string "/Users/mymac/.config/iterm2/"
+defaults write "com.googlecode.iterm2" "ApplePressAndHoldEnabled" -bool False
+defaults write "com.googlecode.iterm2" "AppleAntiAliasingThreshold" -int 1
+defaults write "com.googlecode.iterm2" "OpenNoWindowsAtStartup" -bool False
+defaults write "com.googlecode.iterm2" "LoadPrefsFromCustomFolder" -bool True
+defaults write "com.googlecode.iterm2" "iTerm Version" -string "3.4.23"
+defaults write "com.googlecode.iterm2" "NoSyncLastOSVersion" -string "Version 14.2.1 (Build 23C71)"
+defaults write "com.googlecode.iterm2" "NSWindow Frame NSNavPanelAutosaveName" -string "880 864 800 448 0 0 2560 1600 "
+defaults write "com.googlecode.iterm2" "Default Arrangement Name" -string "Arrangement 1"
+defaults write "com.googlecode.iterm2" "OpenBookmark" -bool False
+defaults write "com.googlecode.iterm2" "SUEnableAutomaticChecks" -bool True
+defaults write "com.googlecode.iterm2" "AppleScrollAnimationEnabled" -int 0
+defaults write "com.googlecode.iterm2" "NSWindow Frame NSColorPanel" -string "0 81 224 278 0 0 2560 1600 "
+defaults write "com.googlecode.iterm2" "NSScrollViewShouldScrollUnderTitlebar" -bool False
+defaults write "com.googlecode.iterm2" "NSNavLastRootDirectory" -string "~/.config"
+defaults write "com.googlecode.iterm2" "NSWindow Frame iTerm Window 0" -string "12 12 2536 1576 0 0 2560 1600 "
+defaults write "com.googlecode.iterm2" "NSWindow Frame iTerm Window 1" -string "1715 0 845 1600 0 0 2560 1600 "
+defaults write "com.googlecode.iterm2" "HapticFeedbackForEsc" -bool False
+defaults write "com.googlecode.iterm2" "AppleSmoothFixedFontsSizeThreshold" -int 1
+defaults write "com.googlecode.iterm2" "SUSendProfileInfo" -bool False
+defaults write "com.googlecode.iterm2" "DimInactiveSplitPanes" -bool True
+defaults write "com.googlecode.iterm2" "OpenArrangementAtStartup" -bool True
+defaults write "com.googlecode.iterm2" "AppleWindowTabbingMode" -string "manual"
+defaults write "com.googlecode.iterm2" "SplitPaneDimmingAmount" -float 0.39691899271844655
+defaults write "com.googlecode.iterm2" "NoSyncLastSystemPythonVersionRequirement" -string "1.17"
+defaults write "com.googlecode.iterm2" "SUHasLaunchedBefore" -bool True
+defaults write "com.googlecode.iterm2" "NoSyncLaunchExperienceControllerRunCount" -int 37
+defaults write "com.googlecode.iterm2" "NSScrollAnimationEnabled" -bool False
+defaults write "com.googlecode.iterm2" "NoSyncNeverRemindPrefsChangesLostForFile" -bool True
+defaults write "com.googlecode.iterm2" "DimOnlyText" -bool False
+defaults write "com.googlecode.iterm2" "NSRepeatCountBinding" -string ""
+defaults write "com.googlecode.iterm2" "DimBackgroundWindows" -bool False
+defaults write "com.googlecode.iterm2" "NoSyncTipOfTheDayEligibilityBeganTime" -float 730260947.443895
+defaults write "com.googlecode.iterm2" "PreventEscapeSequenceFromClearingHistory" -bool False
 defaults write "com.gopro.GoPro" "mainwindow.pos" -string "@Point(107 68)"
 defaults write "com.gopro.GoPro" "mainwindow.size" -string "@Size(1280 720)"
 defaults write "com.gopro.GoPro" "mainwindow.maximized" -bool False
@@ -1413,13 +1422,13 @@ defaults write "com.gyroflow-xyz.Gyroflow" "smoothing-3-yaw" -int 180
 defaults write "com.gyroflow-xyz.Gyroflow" "smoothing-1-smoothness" -int 1
 defaults write "com.gyroflow-xyz.Gyroflow" "smoothing-1-alpha_0_1s" -float 0.1
 defaults write "com.hegenberg.BTTRelaunch" "BTTCrashRestartTime" -float 729844321.827439
-defaults write "com.hegenberg.BetterTouchTool" "BTTDidRegisterForUpdateStats" -string "4.388"
+defaults write "com.hegenberg.BetterTouchTool" "BTTDidRegisterForUpdateStats" -string "4.410"
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_333_build_43333" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "NSNavPanelExpandedSizeForOpenMode" -string "{800, 448}"
 defaults write "com.hegenberg.BetterTouchTool" "BTTDontRestartAfterSleep" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "BTTLastClamshellState" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "windowRightMaximizePercent" -float 0.33
-defaults write "com.hegenberg.BetterTouchTool" "BTTDrawingStartPos" -string "{765.58203125, 721.7421875}"
+defaults write "com.hegenberg.BetterTouchTool" "BTTDrawingStartPos" -string "{831.6171875, 872.39453125}"
 defaults write "com.hegenberg.BetterTouchTool" "BTTNotchbarSavedVisibilityForceHidden" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_203_build_2423" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTAbnormalTerminationCount" -int 0
@@ -1428,7 +1437,7 @@ defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_3_952_bui
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_318_build_43180" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTDidUpdateBTTRemoteSettings" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTTBWasVisibleBeforeSleep" -bool False
-defaults write "com.hegenberg.BetterTouchTool" "version" -string "4.388"
+defaults write "com.hegenberg.BetterTouchTool" "version" -string "4.410"
 defaults write "com.hegenberg.BetterTouchTool" "dValues" -string "6a"
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_317_build_43170" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTWindowSnappingHighPerformanceMode" -bool False
@@ -1451,14 +1460,15 @@ defaults write "com.hegenberg.BetterTouchTool" "SUAutomaticallyUpdate" -bool Tru
 defaults write "com.hegenberg.BetterTouchTool" "BTTSettingsToOpen" -string "BTTTrackpadSettings"
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_272_build_42713" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "SUHasLaunchedBefore" -bool True
-defaults write "com.hegenberg.BetterTouchTool" "BTTPrefsWindowFrame" -string "12 12 1222 782 0 0 2560 1600 "
+defaults write "com.hegenberg.BetterTouchTool" "BTTPrefsWindowFrame" -string "1286 806 1262 782 0 0 2560 1600 "
 defaults write "com.hegenberg.BetterTouchTool" "launchOnStartup" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTBSTInstalled" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "BTTDidCompressOld" -bool True
+defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_410_build_44100" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_144_build_2358" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "windowSnappingEnabled" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "NSColorPickerSlidersDefaults" -string "1"
-defaults write "com.hegenberg.BetterTouchTool" "BTTDidCheckLicenseStatus" -float 727811158.140989
+defaults write "com.hegenberg.BetterTouchTool" "BTTDidCheckLicenseStatus" -float 730408326.988373
 defaults write "com.hegenberg.BetterTouchTool" "didRestartAfterEventTapFault" -int -1
 defaults write "com.hegenberg.BetterTouchTool" "windowLeftMaximizePercent" -float 0.66
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_155_build_2369" -bool True
@@ -1476,7 +1486,7 @@ defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_384_bui
 defaults write "com.hegenberg.BetterTouchTool" "BTTAllowDowngrades" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_184_build_2403" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTWasDisabledBeforeSleep" -bool False
-defaults write "com.hegenberg.BetterTouchTool" "NSWindow Frame BTTPrefs" -string "12 12 1222 782 0 0 2560 1600 "
+defaults write "com.hegenberg.BetterTouchTool" "NSWindow Frame BTTPrefs" -string "1286 806 1262 782 0 0 2560 1600 "
 defaults write "com.hegenberg.BetterTouchTool" "NSColorPanelMode" -string "6"
 defaults write "com.hegenberg.BetterTouchTool" "BTTPerformWakeAction" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_017_build_2232" -bool True
@@ -1485,10 +1495,10 @@ defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_062_bui
 defaults write "com.hegenberg.BetterTouchTool" "BTTOriginalDefaultBrowser" -string "com.google.Chrome"
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_048_build_2266" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTDSVGO" -bool True
-defaults write "com.hegenberg.BetterTouchTool" "BTTNumberOfStarts" -int 10880
+defaults write "com.hegenberg.BetterTouchTool" "BTTNumberOfStarts" -int 10881
 defaults write "com.hegenberg.BetterTouchTool" "BTTConvertedDevices" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTDidResetInputMonitoring" -bool True
-defaults write "com.hegenberg.BetterTouchTool" "NSWindow Frame NSNavPanelAutosaveName" -string "-250 -248 800 448 0 0 1440 900 "
+defaults write "com.hegenberg.BetterTouchTool" "NSWindow Frame NSNavPanelAutosaveName" -string "1022 944 516 188 0 0 2560 1600 "
 defaults write "com.hegenberg.BetterTouchTool" "btt_data_store.version_4_001_build_2214" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTLastConfigWidth" -int 230
 defaults write "com.hegenberg.BetterTouchTool" "BTTHashes" -string "C422AA08A78995C085B515CA4C57D3DF9919D2D3::9D7E11B98A91A3CFC7B601D056E05F5FB430EC7E::84B1AB4B40CAFB6B58D8B89DEC6C6804A97C785D::B38F6CD317E3E2DAEFD1CEF64801D9A91C425D9C::71B9D233CE39FA7773249C7D8BD3CEE083E7D340::74CEC8DDEA2CDB6806FAEE0F56F2497C2F89E809::324357CB348E6A386EB0900558801EB06958178C::::"
@@ -1497,7 +1507,7 @@ defaults write "com.hegenberg.BetterTouchTool" "BTTRemoteEnabled" -bool False
 defaults write "com.hegenberg.BetterTouchTool" "BTTUpdatedToBTRCapable" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "tpThreeFingerDoubleTapDelay" -float 0.5
 defaults write "com.hegenberg.BetterTouchTool" "BTTTouchBarVisible" -bool False
-defaults write "com.hegenberg.BetterTouchTool" "NSNavLastRootDirectory" -string "~/Documents"
+defaults write "com.hegenberg.BetterTouchTool" "NSNavLastRootDirectory" -string "~/Downloads"
 defaults write "com.hegenberg.BetterTouchTool" "BTTLastConnectedWifi" -string "BCW710J-86650-A"
 defaults write "com.hegenberg.BetterTouchTool" "alreadyAskedForInitialWindowSnappingSettings" -bool True
 defaults write "com.hegenberg.BetterTouchTool" "BTTAppListCollapsed" -bool False
@@ -1506,7 +1516,7 @@ defaults write "com.install4j.jdownloader2.uninstaller" "AppleWindowTabbingMode"
 defaults write "com.logitech.Logi-Options" "NSWindow Frame NSNavPanelAutosaveName" -string "0 84 800 448 0 0 1440 900 "
 defaults write "com.logitech.Logi-Options" "NSWindow Frame com.logitech.options.mainwindow" -string "220 110 1000 680 0 0 1440 900 "
 defaults write "com.logitech.manager.daemon" "Cid_6b015_ed03ac1f" -string "6E4425DAAFD662E70506D9874B5E55B8D8D0BEADAF1948B556E9B21657EE23CE"
-defaults write "com.logitech.manager.daemon" "LastConnectTime_6b015_ed03ac1f" -int 1707206573
+defaults write "com.logitech.manager.daemon" "LastConnectTime_6b015_ed03ac1f" -int 1708710891
 defaults write "com.logitech.manager.devinfo" "SERNUM-/Bluetooth/eb-21-33-0f-17-a2" -int 438293
 defaults write "com.logitech.manager.devinfo" "DEVNAME_6b34c_/Bluetooth/ed5eca366628" -string "Keyboard K370/K375"
 defaults write "com.logitech.manager.devinfo" "DEVNAME_6b015_/Bluetooth/eb21330f17a2" -string "M720 Triathlon"
