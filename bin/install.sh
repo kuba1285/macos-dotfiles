@@ -86,8 +86,6 @@ fi
 # Install custom app
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install custom app?'
 if [[ $YN = y ]] ; then
-    echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
-
     cd
     git clone http://github.com/possatti/pokemonsay &>> $INSTLOG
     cd pokemonsay
@@ -104,6 +102,9 @@ if [[ $YN = y ]] ; then
     # copy the configs directory
     cp -rT $PARENT/. ~/ &>> $INSTLOG
     echo -e "$COK - Installed."
+
+    echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
+    echo "neowofetch --gap -30 --ascii \"\$(fortune -s | pokemonsay -w 30)\""  >> ~/.zshrc
     ln -s ~/Documents ~/Documents-ln
     ln -s ~/Downloads ~/Downloads-ln
 fi
