@@ -18,6 +18,10 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle install --file $CURRENT/Brewfile
 
+git clone http://github.com/possatti/pokemonsay
+cd pokemonsay
+./install.sh
+
 yabai --start-service
 skhd --start-service
 
