@@ -108,22 +108,22 @@ if [[ $YN = y ]] ; then
 
     echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
     echo "neowofetch --gap -30 --ascii \"\$(fortune -s | pokemonsay -w 30)\""  >> ~/.zshrc
-    ln -s ~/Documents ~/Documents-ln
-    ln -s ~/Downloads ~/Downloads-ln
 fi
 
 # Enable services
 yabai --start-service
 skhd --start-service
 
-# Generate Brewfile
-brew bundle dump
-
 # Prevent Finder from creating .DS_Store (requires restart of Finder for setting to take effect)
 defaults write com.apple.desktopservices DSDontWriteNetworkStores True && killall Finder
 
-# Finder display Path 
+# Make Finder display Path 
 defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true && killall Finder
+
+# Generate miscelenaeous file
+brew bundle dump
+ln -s ~/Documents ~/Documents-ln
+ln -s ~/Downloads ~/Downloads-ln
 
 # Script is done
 echo -e "$CNT - Script had completed!"
