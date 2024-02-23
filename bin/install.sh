@@ -112,8 +112,7 @@ skhd --start-service
 brew bundle dump
 
 # Prevent Finder from creating .DS_Store (requires restart of Finder for setting to take effect)
-defaults write com.apple.desktopservices DSDontWriteNetworkStores True
-killall Finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores True && killall Finder
 
 # Finder display Path 
 defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true && killall Finder
