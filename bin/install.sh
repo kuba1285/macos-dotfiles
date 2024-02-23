@@ -61,6 +61,23 @@ else
     echo "Since Homebrew is already installed, skip this phase and proceed."
 fi
 
+# brew path setting
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+
+# Install app from Brewfile
+wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install app from Brewfile'
+if [[ $YN = y ]] ; then
+    brew bundle install --file $BIN/Brewfile
+fi
+
+# Install custom app
+wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install custom app'
+if [[ $YN = y ]] ; then
+    git clone http://github.com/possatti/pokemonsay
+    cd pokemonsay
+    ./install.sh
+    echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
+
 # Copy Config Files
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to copy config files?'
 if [[ $YN = y ]] ; then
@@ -69,15 +86,6 @@ if [[ $YN = y ]] ; then
     # copy the configs directory
     cp -rT $PARENT/. ~/ &>> $INSTLOG
 fi
-
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-
-brew bundle install --file $CURRENT/Brewfile
-
-git clone http://github.com/possatti/pokemonsay
-cd pokemonsay
-./install.sh
-echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
 
 yabai --start-service
 skhd --start-service
