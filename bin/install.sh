@@ -21,6 +21,7 @@ brew bundle install --file $CURRENT/Brewfile
 git clone http://github.com/possatti/pokemonsay
 cd pokemonsay
 ./install.sh
+echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/zshrc
 
 yabai --start-service
 skhd --start-service
