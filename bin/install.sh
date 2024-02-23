@@ -2,10 +2,10 @@
 
 CURRENT=$(cd $(dirname $0)/../; pwd)
 
-echo "Xcodeをインストールします..."
+echo "Installing Xcode..."
 xcode-select --install
 
-# rosettaのインストール。不要であれば下記1行削除してください
+# Install rosetta
 sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --install-rosetta --agree-to-license
 
 if ! type brew &> /dev/null ; then
