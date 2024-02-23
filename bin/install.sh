@@ -119,8 +119,9 @@ source $BIN/parse-plist
 # Generate miscelenaeous file
 brew bundle dump
 parse-plist > parse-plist
-ln -s ~/Documents ~/Documents-ln
-ln -s ~/Downloads ~/Downloads-ln
+sudo ln -s /Users/$USER/Documents /Users/$USER/Documents-ln
+sudo ln -s /Users/$USER/Downloads /Users/$USER/Downloads-ln
+sudo ln -s /Users/$USER/ /Users/$USER/mymac-ln
 
 # Script is done
 echo -e "$CNT - Script had completed!"
