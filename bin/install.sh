@@ -52,13 +52,14 @@ if [[ $YN = y ]] ; then
     sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --install-rosetta --agree-to-license
 fi
 
+# Install homebrew
 if ! type brew &> /dev/null ; then
     echo -en "$CNT - Now installing Homebrew."
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     show_progress $!
     echo -e "$COK - Installed."
 else
-    echo "Since Homebrew is already installed, skip this phase and proceed."
+    echo -e "$CNT - Since Homebrew is already installed, skip this phase and proceed."
 fi
 
 # brew path setting
