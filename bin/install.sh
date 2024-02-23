@@ -42,6 +42,7 @@ else
     exit
 fi
 
+# Install CLI for Xcode
 echo -en "$CNT - Now installing CLI for Xcode."
 xcode-select --install &>> $INSTLOG
 show_progress $!
