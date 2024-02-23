@@ -104,11 +104,12 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-cheatsh() { curl "http://cheat.sh/$1"; }
 alias ls='lsd'
 alias python="python3"
 alias pip="pip3"
 alias clear="paclear -c yellow -s 3"
+
+cheatsh() { curl "http://cheat.sh/$1"; }
 
 eval "$(starship init zsh)"
 
