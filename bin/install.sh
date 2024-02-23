@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#  Brewfile has some rules.
+#  About Brewfile
 # 1. The command line tool registered with Homebrew is "brew 'app-name'" (installed with the brew install command)
 # 2. Command line tools that are not registered in Homebrew are "tap 'app-name'" (installed with the brew tap command)
 # 3. Normal applications are "cask 'app-name'" (those installed using Homebrew Cask)
