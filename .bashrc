@@ -23,3 +23,5 @@ eval "$(starship init bash)"
 export PATH="$PATH:/usr/local/bin/python3"
 # installed by pip3
 export PATH="$PATH:/usr/local/opt/python@3.12/libexec/bin"
+
+neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"
