@@ -5,7 +5,7 @@
 # 2. Command line tools that are not registered in Homebrew are "tap 'app-name'" (installed with the brew tap command)
 # 3. Normal applications are "cask 'app-name'" (those installed using Homebrew Cask)
 # 4. The app to install from the App Store is "mas 'app name' id:XX"
-#  'brew cask' can be used automatically if you install Homebrew, but 'mas' requires 'mas-cli' to be installed.
+#  'brew cask' can be used if you install Homebrew, but 'mas' requires 'mas-cli' to be installed.
 
 # set some colors
 CNT="[\e[1;36mNOTE\e[0m]"
