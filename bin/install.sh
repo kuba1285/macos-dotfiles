@@ -20,3 +20,6 @@ brew bundle install --file $CURRENT/Brewfile
 
 yabai --start-service
 skhd --start-service
+
+ln -s ~/Documents ~/Documents-ln
+ln -s ~/Downloads ~/Downloads-ln
