@@ -115,5 +115,8 @@ brew bundle dump
 defaults write com.apple.desktopservices DSDontWriteNetworkStores True
 killall Finder
 
+# Finder display Path 
+defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true && killall Finder
+
 # Script is done
 echo -e "$CNT - Script had completed!"
