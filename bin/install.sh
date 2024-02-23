@@ -43,19 +43,19 @@ else
 fi
 
 echo -en "$CNT - Now installing CLI for Xcode."
-xcode-select --install
+xcode-select --install &>> $INSTLOG
 show_progress $!
 
 # Install rosetta
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install rosetta?'
 if [[ $YN = y ]] ; then
-    sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --install-rosetta --agree-to-license
+    sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --install-rosetta --agree-to-license &>> $INSTLOG
 fi
 
 # Install homebrew
 if ! type brew &> /dev/null ; then
     echo -en "$CNT - Now installing Homebrew."
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &>> $INSTLOG
     show_progress $!
     echo -e "$COK - Installed."
 else
@@ -68,16 +68,17 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 # Install app from Brewfile
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install app from Brewfile?'
 if [[ $YN = y ]] ; then
-    brew bundle install --file $BIN/Brewfile
+    brew bundle install --file $BIN/Brewfile &>> $INSTLOG
     echo -e "$COK - Installed."
 fi
 
 # Install custom app
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install custom app?'
 if [[ $YN = y ]] ; then
-    git clone http://github.com/possatti/pokemonsay
+    cd
+    git clone http://github.com/possatti/pokemonsay &>> $INSTLOG
     cd pokemonsay
-    ./install.sh
+    ./install.sh &>> $INSTLOG
     echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
 
     echo -e "$COK - Installed."
