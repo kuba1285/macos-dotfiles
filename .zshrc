@@ -77,9 +77,8 @@ neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=()
-source $ZSH/oh-my-zsh.sh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,6 +107,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 cheatsh() { curl "http://cheat.sh/$1"; }
 alias ls='lsd'
-export PATH="$PATH:/Users/mymac/bin"
-
 eval "$(starship init zsh)"
