@@ -113,11 +113,8 @@ fi
 yabai --start-service
 skhd --start-service
 
-# Prevent Finder from creating .DS_Store (requires restart of Finder for setting to take effect)
-defaults write com.apple.desktopservices DSDontWriteNetworkStores True && killall Finder
-
-# Make Finder display Path 
-defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true && killall Finder
+# default write setting
+source $BIN/parse-plist
 
 # Generate miscelenaeous file
 brew bundle dump
