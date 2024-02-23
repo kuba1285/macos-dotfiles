@@ -110,7 +110,6 @@ alias pip="pip3"
 alias clear="paclear -c yellow -s 3"
 
 cheatsh() { curl "http://cheat.sh/$1"; }
-
 eval "$(starship init zsh)"
 
 # Write from "Caveats" of 'brew (re)install python3'.
