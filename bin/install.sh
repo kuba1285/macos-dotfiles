@@ -91,8 +91,6 @@ if [[ $YN = y ]] ; then
     git clone http://github.com/possatti/pokemonsay &>> $INSTLOG
     cd pokemonsay
     ./install.sh &>> $INSTLOG
-
-    brew install rcmdnk/rcmdnkpac/parse-plist
     echo -e "$COK - Installed."
 fi
 
