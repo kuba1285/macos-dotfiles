@@ -86,12 +86,13 @@ fi
 # Install custom app
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install custom app?'
 if [[ $YN = y ]] ; then
+    echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
+
     cd
     git clone http://github.com/possatti/pokemonsay &>> $INSTLOG
     cd pokemonsay
     ./install.sh &>> $INSTLOG
-    echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
-
+    
     echo -e "$COK - Installed."
 fi
 
