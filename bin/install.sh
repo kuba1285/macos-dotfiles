@@ -70,7 +70,7 @@ else
     echo -e "$CNT - Since Homebrew is already installed, skip this phase and proceed."
 fi
 
-# brew path setting
+# Homebrew path setting
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 
 # Install app from Brewfile
@@ -108,6 +108,7 @@ fi
 yabai --start-service
 skhd --start-service
 
+# Generate Brewfile
 brew bundle dump
 
 # Script is done
