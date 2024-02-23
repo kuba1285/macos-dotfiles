@@ -97,6 +97,11 @@ if [[ $YN = y ]] ; then
     ln -s ~/Downloads ~/Downloads-ln
 fi
 
+# Enable services
 yabai --start-service
 skhd --start-service
 
+brew bundle dump
+
+# Script is done
+echo -e "$CNT - Script had completed!"
