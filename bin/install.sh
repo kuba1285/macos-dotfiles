@@ -93,10 +93,10 @@ if [[ $YN = y ]] ; then
     # copy the configs directory
     cp -rT $PARENT/. ~/ &>> $INSTLOG
     echo -e "$COK - Installed."
+    ln -s ~/Documents ~/Documents-ln
+    ln -s ~/Downloads ~/Downloads-ln
 fi
 
 yabai --start-service
 skhd --start-service
 
-ln -s ~/Documents ~/Documents-ln
-ln -s ~/Downloads ~/Downloads-ln
