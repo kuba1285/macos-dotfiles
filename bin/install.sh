@@ -42,7 +42,7 @@ else
     exit
 fi
 
-echo -en "$CNT - Now installing CLI for Xcode ."
+echo -en "$CNT - Now installing CLI for Xcode."
 xcode-select --install
 show_progress $!
 
