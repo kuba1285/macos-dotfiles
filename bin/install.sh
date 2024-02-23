@@ -17,3 +17,5 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle install --file ./Brewfile
 
+abai --start-service
+skhd --start-service
