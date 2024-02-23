@@ -554,6 +554,8 @@
 			<string>HackNFM-Regular 22</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
+			<key>Open Toolbelt</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -590,6 +592,8 @@
 			<string></string>
 			<key>Silence Bell</key>
 			<false/>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -613,7 +617,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>Working Directory</key>
 			<string>/Users/mymac</string>
 		</dict>
@@ -659,6 +663,10 @@
 	</dict>
 	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
+	<key>SeparateWindowTitlePerTab</key>
+	<true/>
+	<key>SmartPlacement</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -677,7 +685,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1576</real>
+				<real>1552</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -687,7 +695,7 @@
 				<key>Is Hotkey Window</key>
 				<false/>
 				<key>Saved Window Type</key>
-				<integer>0</integer>
+				<integer>12</integer>
 				<key>Screen</key>
 				<integer>0</integer>
 				<key>Scroller Width</key>
@@ -700,12 +708,12 @@
 						<key>Root</key>
 						<dict>
 							<key>Splitter ID</key>
-							<string>A6C0EBC2-52C9-45AD-9EE0-766D62F99EA4</string>
+							<string>D646C5E1-6719-482A-8F1C-D0C85A6F13B1</string>
 							<key>Subviews</key>
 							<array>
 								<dict>
 									<key>Is Active</key>
-									<integer>1</integer>
+									<integer>0</integer>
 									<key>Session</key>
 									<dict>
 										<key>Bookmark</key>
@@ -876,7 +884,7 @@
 											<key>Blur</key>
 											<true/>
 											<key>Blur Radius</key>
-											<real>9.7161569148936167</real>
+											<real>14.533086768617014</real>
 											<key>Bold Color</key>
 											<dict>
 												<key>Blue Component</key>
@@ -1240,9 +1248,11 @@
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>HackNFM-Regular 20</string>
+											<string>HackNFM-Regular 22</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<true/>
+											<key>Open Toolbelt</key>
+											<false/>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
 											<key>Prompt Before Closing 2</key>
@@ -1279,6 +1289,8 @@
 											<string></string>
 											<key>Silence Bell</key>
 											<false/>
+											<key>Space</key>
+											<integer>0</integer>
 											<key>Sync Title</key>
 											<false/>
 											<key>Tags</key>
@@ -1286,7 +1298,7 @@
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
 											<key>Transparency</key>
-											<real>0.59780585106382977</real>
+											<real>0.39931017287234033</real>
 											<key>Unlimited Scrollback</key>
 											<false/>
 											<key>Use Bold Font</key>
@@ -1302,12 +1314,12 @@
 											<key>Visual Bell</key>
 											<true/>
 											<key>Window Type</key>
-											<integer>0</integer>
+											<integer>12</integer>
 											<key>Working Directory</key>
 											<string>/Users/mymac</string>
 										</dict>
 										<key>Columns</key>
-										<integer>104</integer>
+										<integer>95</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -1340,9 +1352,9 @@
 											<string>Command</string>
 										</dict>
 										<key>Rows</key>
-										<integer>63</integer>
+										<integer>58</integer>
 										<key>Session GUID</key>
-										<string>47B8A666-4CCF-402B-9B0F-5CD8696E712B</string>
+										<string>AC695B71-BB8B-4F79-B8CD-274F141E0A30</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -1364,9 +1376,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1547</real>
+										<real>1552</real>
 										<key>width</key>
-										<real>1268</real>
+										<real>1256</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -1375,7 +1387,7 @@
 								</dict>
 								<dict>
 									<key>Splitter ID</key>
-									<string>02846272-E100-4BD2-AB75-E35C555339A3</string>
+									<string>0BE52E73-A3EF-4A09-BCB8-B1E50A861112</string>
 									<key>Subviews</key>
 									<array>
 										<dict>
@@ -1551,7 +1563,7 @@
 													<key>Blur</key>
 													<true/>
 													<key>Blur Radius</key>
-													<real>9.7161569148936167</real>
+													<real>14.533086768617014</real>
 													<key>Bold Color</key>
 													<dict>
 														<key>Blue Component</key>
@@ -1915,9 +1927,11 @@
 													<key>Non-ASCII Anti Aliased</key>
 													<true/>
 													<key>Normal Font</key>
-													<string>HackNFM-Regular 20</string>
+													<string>HackNFM-Regular 22</string>
 													<key>Only The Default BG Color Uses Transparency</key>
 													<true/>
+													<key>Open Toolbelt</key>
+													<false/>
 													<key>Option Key Sends</key>
 													<integer>0</integer>
 													<key>Prompt Before Closing 2</key>
@@ -1954,6 +1968,8 @@
 													<string></string>
 													<key>Silence Bell</key>
 													<false/>
+													<key>Space</key>
+													<integer>0</integer>
 													<key>Sync Title</key>
 													<false/>
 													<key>Tags</key>
@@ -1961,7 +1977,7 @@
 													<key>Terminal Type</key>
 													<string>xterm-256color</string>
 													<key>Transparency</key>
-													<real>0.59780585106382977</real>
+													<real>0.39931017287234033</real>
 													<key>Unlimited Scrollback</key>
 													<false/>
 													<key>Use Bold Font</key>
@@ -1977,12 +1993,12 @@
 													<key>Visual Bell</key>
 													<true/>
 													<key>Window Type</key>
-													<integer>0</integer>
+													<integer>12</integer>
 													<key>Working Directory</key>
 													<string>/Users/mymac</string>
 												</dict>
 												<key>Columns</key>
-												<integer>104</integer>
+												<integer>95</integer>
 												<key>Commands</key>
 												<array/>
 												<key>Directories</key>
@@ -2015,9 +2031,9 @@
 													<string>Command</string>
 												</dict>
 												<key>Rows</key>
-												<integer>31</integer>
+												<integer>28</integer>
 												<key>Session GUID</key>
-												<string>DD1B8280-58B4-474A-BF05-84177B13D783</string>
+												<string>16BCCD8D-25AE-43E1-B4E7-09DAE2C4E3C1</string>
 												<key>Short Lived Single Use</key>
 												<false/>
 												<key>Should Expect Current Dir Updates</key>
@@ -2039,9 +2055,9 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>773</real>
+												<real>776</real>
 												<key>width</key>
-												<real>1267</real>
+												<real>1255</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
@@ -2050,7 +2066,7 @@
 										</dict>
 										<dict>
 											<key>Is Active</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>Session</key>
 											<dict>
 												<key>Bookmark</key>
@@ -2221,7 +2237,7 @@
 													<key>Blur</key>
 													<true/>
 													<key>Blur Radius</key>
-													<real>9.7161569148936167</real>
+													<real>14.533086768617014</real>
 													<key>Bold Color</key>
 													<dict>
 														<key>Blue Component</key>
@@ -2585,9 +2601,11 @@
 													<key>Non-ASCII Anti Aliased</key>
 													<true/>
 													<key>Normal Font</key>
-													<string>HackNFM-Regular 20</string>
+													<string>HackNFM-Regular 22</string>
 													<key>Only The Default BG Color Uses Transparency</key>
 													<true/>
+													<key>Open Toolbelt</key>
+													<false/>
 													<key>Option Key Sends</key>
 													<integer>0</integer>
 													<key>Prompt Before Closing 2</key>
@@ -2624,6 +2642,8 @@
 													<string></string>
 													<key>Silence Bell</key>
 													<false/>
+													<key>Space</key>
+													<integer>0</integer>
 													<key>Sync Title</key>
 													<false/>
 													<key>Tags</key>
@@ -2631,7 +2651,7 @@
 													<key>Terminal Type</key>
 													<string>xterm-256color</string>
 													<key>Transparency</key>
-													<real>0.59780585106382977</real>
+													<real>0.39931017287234033</real>
 													<key>Unlimited Scrollback</key>
 													<false/>
 													<key>Use Bold Font</key>
@@ -2647,12 +2667,12 @@
 													<key>Visual Bell</key>
 													<true/>
 													<key>Window Type</key>
-													<integer>0</integer>
+													<integer>12</integer>
 													<key>Working Directory</key>
 													<string>/Users/mymac</string>
 												</dict>
 												<key>Columns</key>
-												<integer>104</integer>
+												<integer>95</integer>
 												<key>Commands</key>
 												<array/>
 												<key>Directories</key>
@@ -2685,9 +2705,9 @@
 													<string>Command</string>
 												</dict>
 												<key>Rows</key>
-												<integer>31</integer>
+												<integer>28</integer>
 												<key>Session GUID</key>
-												<string>49778EBD-A32E-46B7-B80C-63D18DC5FCDE</string>
+												<string>8F49A58C-616E-4FC4-93DB-40A90F5A47BD</string>
 												<key>Short Lived Single Use</key>
 												<false/>
 												<key>Should Expect Current Dir Updates</key>
@@ -2709,13 +2729,13 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>773</real>
+												<real>775</real>
 												<key>width</key>
-												<real>1267</real>
+												<real>1255</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>774</real>
+												<real>777</real>
 											</dict>
 										</dict>
 									</array>
@@ -2724,11 +2744,11 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1547</real>
+										<real>1552</real>
 										<key>width</key>
-										<real>1267</real>
+										<real>1255</real>
 										<key>x</key>
-										<real>1269</real>
+										<real>1257</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -2741,9 +2761,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1547</real>
+								<real>1552</real>
 								<key>width</key>
-								<real>2536</real>
+								<real>2512</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -2753,11 +2773,11 @@
 							<true/>
 						</dict>
 						<key>Tab GUID</key>
-						<string>8859017D-28AC-45DE-A0AD-6F1D85E288D6</string>
+						<string>AB24581D-B107-4FB0-AF88-D96B5238E9B9</string>
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-2049EFCA-D1EA-4F7E-9341-85BA949922EC</string>
+				<string>pty-A4966AF8-A7D9-4DBF-B593-30B4EE73A4DE</string>
 				<key>Toolbelt</key>
 				<dict>
 					<key>Profiles</key>
@@ -2786,13 +2806,13 @@
 				<key>Use Transparency</key>
 				<true/>
 				<key>Width</key>
-				<real>2536</real>
+				<real>2512</real>
 				<key>Window Type</key>
-				<integer>0</integer>
+				<integer>12</integer>
 				<key>X Origin</key>
-				<real>12</real>
+				<real>24</real>
 				<key>Y Origin</key>
-				<real>12</real>
+				<real>24</real>
 			</dict>
 		</array>
 	</dict>
