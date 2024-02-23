@@ -57,6 +57,7 @@ if ! type brew &> /dev/null ; then
     echo -en "$CNT - Now installing Homebrew."
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     show_progress $!
+    echo -e "$COK - Installed."
 else
     echo "Since Homebrew is already installed, skip this phase and proceed."
 fi
@@ -65,18 +66,22 @@ fi
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 
 # Install app from Brewfile
-wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install app from Brewfile'
+wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install app from Brewfile?'
 if [[ $YN = y ]] ; then
     brew bundle install --file $BIN/Brewfile
+    echo -e "$COK - Installed."
 fi
 
 # Install custom app
-wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install custom app'
+wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to install custom app?'
 if [[ $YN = y ]] ; then
     git clone http://github.com/possatti/pokemonsay
     cd pokemonsay
     ./install.sh
     echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
+
+    echo -e "$COK - Installed."
+fi
 
 # Copy Config Files
 wait_yn $'[\e[1;33mACTION\e[0m] - Would you like to copy config files?'
@@ -85,6 +90,7 @@ if [[ $YN = y ]] ; then
 
     # copy the configs directory
     cp -rT $PARENT/. ~/ &>> $INSTLOG
+    echo -e "$COK - Installed."
 fi
 
 yabai --start-service
