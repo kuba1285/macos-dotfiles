@@ -110,6 +110,7 @@ alias python="python3"
 alias pip="pip3"
 eval "$(starship init zsh)"
 
+# Write from "Caveats" of 'brew (re)install python3'.
 # Python3
 export PATH="$PATH:/usr/local/bin/python3"
 # installed by pip3
