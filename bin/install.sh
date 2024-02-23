@@ -11,7 +11,6 @@ CWR="[\e[1;35mWARNING\e[0m]"
 BIN=$(cd $(dirname $0); pwd)
 PARENT=$(cd $(dirname $0)/../; pwd)
 INSTLOG="$BIN/install.log"
-
 ######
 
 # function that would show a progress bar to the user
