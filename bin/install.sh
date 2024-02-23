@@ -118,6 +118,7 @@ source $BIN/parse-plist
 
 # Generate miscelenaeous file
 brew bundle dump
+parse-plist > parse-plist
 ln -s ~/Documents ~/Documents-ln
 ln -s ~/Downloads ~/Downloads-ln
 
