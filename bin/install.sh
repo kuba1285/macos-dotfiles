@@ -13,6 +13,7 @@ if ! type brew &> /dev/null ; then
 else
     echo "Since Homebrew is already installed, skip this phase and proceed."
 fi
+
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle install --file $CURRENT/Brewfile
