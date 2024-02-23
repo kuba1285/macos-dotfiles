@@ -93,7 +93,6 @@ if [[ $YN = y ]] ; then
     ./install.sh &>> $INSTLOG
 
     brew install rcmdnk/rcmdnkpac/parse-plist
-    
     echo -e "$COK - Installed."
 fi
 
