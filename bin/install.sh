@@ -13,8 +13,7 @@
 # 2. Launch Terminal from the Utilities menu.
 # 3. Run the command 'csrutil disable'.
 # 4. Restart your computer.
-# 5. Run the command 'sudo nvram boot-args=-arm64e_preview_abi' (If on M1 Mac)
-# 6. Restart your computer.
+# 5. Restart your computer.
 
 # set some colors
 CNT="[\e[1;36mNOTE\e[0m]"
@@ -117,6 +116,12 @@ fi
 
 # yabai sudoers setting
 echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
+
+# A bootplug to match the binary format so that yabai can inject code into the Dock of arm64 binaries.
+if [[ $(uname -m) == 'arm64' ]]; then
+    sudo nvram boot-args=-arm64e_preview_abi
+    echo -en "$COK - A bootplug to match the binary format so that yabai can inject code into the Dock of arm64 binaries."
+fi
 
 # Enable services
 yabai --start-service
