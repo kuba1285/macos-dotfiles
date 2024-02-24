@@ -12,8 +12,7 @@ yabai -m config right_padding 48
 yabai -m config window_gap 24
 
 # center mouse on window with focus
-yabai -m config mouse_follows_focus on
-
+yabai -m config mouse_follows_focus off
 yabai -m config focus_follows_mouse autoraise
 
 # modifier for clicking and dragging with mouse
@@ -27,7 +26,7 @@ yabai -m config mouse_action2 resize
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap
 
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Karabiner-Elements$" manage=off
+# inspect by 'yabai -m query --windows | jq ".[] | { App: .app, Title: .title }"'
+yabai -m rule --add app="^システム設定$" title=".*" manage=off
+yabai -m rule --add app="^計算機$" title=".*" manage=off
+yabai -m rule --add app="^Google-chrome$" title="^(Picture-in-Picture)$" manage=off
