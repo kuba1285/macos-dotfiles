@@ -28,10 +28,10 @@ yabai -m config mouse_action2 resize
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap
 
-# inspect by 'yabai -m query --windows | jq ".[] | { App: .app, Title: .title }"'
+# ban be inspected by 'yabai -m query --windows | jq ".[] | { App: .app, Title: .title }"'
 yabai -m rule --add app="^システム設定$" title=".*" manage=off
 yabai -m rule --add app="^計算機$" title=".*" manage=off
-yabai -m rule --add app="^Google-chrome$" title="^(Picture-in-Picture)$" manage=off
+yabai -m rule --add app="Google Chrome" title="ピクチャー イン ピクチャー" manage=on grid=20:20:13:14:6:6 sticky=on layer=above
 
 yabai -m config window_opacity on
 yabai -m config window_opacity_duration 0.0
