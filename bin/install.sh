@@ -115,6 +115,11 @@ if [[ $YN = y ]] ; then
     echo "neowofetch --gap -30 --ascii \"\$(fortune -s | pokemonsay -w 30)\""  >> ~/.zshrc
 fi
 
+# yabai sudoers setting
+HASH=$(shasum -a 256 $(which yabai))
+YABAI=$(which yabai)
+echo "$USER ALL=(root) NOPASSWD: sha256:$HASH $YABAI --load-sa" | sudo tee -a /private/etc/sudoers.d/yabai
+
 # Enable services
 yabai --start-service
 skhd --start-service
