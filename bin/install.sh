@@ -116,9 +116,7 @@ if [[ $YN = y ]] ; then
 fi
 
 # yabai sudoers setting
-HASH=$(shasum -a 256 $(which yabai))
-YABAI=$(which yabai)
-echo "$USER ALL=(root) NOPASSWD: sha256:$HASH $YABAI --load-sa" | sudo tee -a /private/etc/sudoers.d/yabai
+echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
 
 # Enable services
 yabai --start-service
