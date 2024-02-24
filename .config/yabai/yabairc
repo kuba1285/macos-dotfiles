@@ -1,3 +1,5 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
 # default layout (can be bsp, stack or float)
 yabai -m config layout bsp
 
@@ -29,3 +31,16 @@ yabai -m mouse_drop_action swap
 yabai -m rule --add app="^システム設定$" title=".*" manage=off
 yabai -m rule --add app="^計算機$" title=".*" manage=off
 yabai -m rule --add app="^Google-chrome$" title="^(Picture-in-Picture)$" manage=off
+
+yabai -m config window_opacity               on
+yabai -m config window_opacity_duration      0.0
+yabai -m config active_window_opacity        0.9
+yabai -m config normal_window_opacity        0.85
+yabai -m config window_border                on
+yabai -m config window_border_width          4
+yabai -m config window_border_radius         12
+yabai -m config window_border_blur           off
+yabai -m config window_border_hidipi         on
+yabai -m config active_window_border_color   0xff775759
+yabai -m config normal_window_border_color   0xff555555
+yabai -m config insert_feedback_color        0xaad75f5f
