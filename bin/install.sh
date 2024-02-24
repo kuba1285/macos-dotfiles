@@ -13,6 +13,8 @@
 # 2. Launch Terminal from the Utilities menu.
 # 3. Run the command 'csrutil disable'.
 # 4. Restart your computer.
+# 5. Run the command 'sudo nvram boot-args=-arm64e_preview_abi' (If on M1 Mac)
+# 6. Restart your computer.
 
 # set some colors
 CNT="[\e[1;36mNOTE\e[0m]"
