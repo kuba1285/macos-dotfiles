@@ -108,7 +108,7 @@ if [[ $YN = y ]] ; then
 
     # copy the configs directory
     cp -rT $PARENT/. ~/ &>> $INSTLOG
-    cp $PARENT/src/donut.c /Users/$USER/bin/
+    cp $PARENT/src/* /Users/$USER/bin/
     echo -e "$COK - Installed."
 
     echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
