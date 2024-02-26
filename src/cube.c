@@ -21,9 +21,9 @@ void usleep(__int64 usec)
 
 float A, B, C;
 float cubeWidth = 20;
-int width = 160, height = 30;
-float zBuffer[160 * 30];
-char buffer[160 * 30];
+int width = 80, height = 30;
+float zBuffer[80 * 30];
+char buffer[80 * 30];
 int backgroundASCIICode = ' ';
 int distanceFromCam = 120;
 float horizontalOffset;
@@ -76,7 +76,7 @@ int main() {
     memset(buffer, backgroundASCIICode, width * height);
     memset(zBuffer, 0, width * height * 4);
     cubeWidth = 20;
-    horizontalOffset = -2 * cubeWidth;
+    horizontalOffset = 0 * cubeWidth;
     // first cube
     for (float cubeX = -cubeWidth; cubeX < cubeWidth; cubeX += incrementSpeed) {
       for (float cubeY = -cubeWidth; cubeY < cubeWidth;
