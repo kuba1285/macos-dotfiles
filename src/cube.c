@@ -25,7 +25,7 @@ int width = 160, height = 30;
 float zBuffer[160 * 30];
 char buffer[160 * 30];
 int backgroundASCIICode = ' ';
-int distanceFromCam = 100;
+int distanceFromCam = 120;
 float horizontalOffset;
 float K1 = 40;
 
