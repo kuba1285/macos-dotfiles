@@ -112,6 +112,7 @@ if [[ $YN = y ]] ; then
     echo -e "$COK - Installed."
 
     echo export \""PATH="\$PATH:/Users/$USER/bin\" >> ~/.zshrc
+    echo -e "TMOUT=900\nTRAPALRM() { tput bold && tput setaf 2 && gcc /Users/$USER/bin/donut.c -o /Users/$USER/bin/donut && /Users/$USER/bin/donut }" >> ~/.zshrc
     echo "neowofetch --gap -30 --ascii \"\$(fortune -s | pokemonsay -w 30)\""  >> ~/.zshrc
 fi
 
