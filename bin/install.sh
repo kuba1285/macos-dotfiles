@@ -110,13 +110,7 @@ if [[ $YN = y ]] ; then
     cp -rT $PARENT/. ~/ &>> $INSTLOG
     cp $PARENT/src/* /Users/$USER/bin/
     echo -e "$COK - Installed."
-
-    echo -e export "PATH=\"\$PATH:/Users/$USER/bin\"\nneofetch" >> ~/.zshrc
-    echo -e "TMOUT=900\nTRAPALRM() { tput bold && tput setaf 2 && gcc /Users/$USER/bin/donut.c -o /Users/$USER/bin/donut && /Users/$USER/bin/donut }" >> ~/.zshrc
 fi
-
-# yabai sudoers setting
-echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
 
 # A bootplug to match the binary format so that yabai can inject code into the Dock of arm64 binaries.
 if [[ $(uname -m) == 'arm64' ]]; then
@@ -128,8 +122,9 @@ fi
 yabai --start-service
 skhd --start-service
 
-# Write default-write setting
+# Write settings
 source $BIN/parse-plist
+source $BIN/write.sh
 
 # Generate miscelenaeous file
 brew bundle dump
