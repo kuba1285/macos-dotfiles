@@ -13,7 +13,8 @@ alias grep='grep --color=auto'
 alias ls='lsd'
 alias python="python3"
 alias pip="pip3"
-alias clear="paclear -c yellow -s 3"
+alias neofetch='neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"'
+alias clear='paclear -s 5 -c yellow'
 
 cheatsh() { curl "http://cheat.sh/$1"; }
 eval "$(starship init bash)"
