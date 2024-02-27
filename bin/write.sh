@@ -1,10 +1,11 @@
 #!/bin/bash
 
+gcc /Users/$USER/bin/cube.c -o /Users/$USER/bin/cube
 cat << EOF >> ~/.zshrc
 export PATH="\$PATH:/Users/$USER/bin"
 neofetch
 TMOUT=900
-TRAPALRM() { tput bold && tput setaf 3 && gcc /Users/$USER/bin/cube.c -o /Users/$USER/bin/cube && /Users/$USER/bin/cube }
+TRAPALRM() { tput bold && tput setaf 3 && cube }
 EOF
 
 # yabai sudoers setting
