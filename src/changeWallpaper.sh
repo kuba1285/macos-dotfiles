@@ -76,8 +76,8 @@ function killWallpaperAgent() {
 }
 
 function showVariables(){
-    echo "screenSaverBase64: ${screenSaverBase64}"
-    echo "wallpaperBase64: ${wallpaperBase64}"
+	echo "screenSaverBase64: ${screenSaverBase64}"
+	echo "wallpaperBase64: ${wallpaperBase64}"
 	echo "$(date) - Setting screen saver settings..."
 	echo "$(date) - screenSaverBase64: ${screenSaverBase64}"
 	echo "$(date) - wallpaperBase64: ${wallpaperBase64}"
