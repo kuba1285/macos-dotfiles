@@ -1,10 +1,10 @@
 #!/bin/bash 
 
 function getDefinedVariables() {
-    loggedInUser=$(/usr/bin/stat -f%Su /dev/console)
-    wallpaper_store_path="/Users/${loggedInUser}/Library/Application Support/com.apple.wallpaper/Store/Index.plist"
-    screenSaverBase64=$(plutil -extract AllSpacesAndDisplays xml1 -o - "${wallpaper_store_path}" | awk '/<data>/,/<\/data>/' | xargs | tr -d " " | tr "<" "\n" | tail -2 | head -1 | cut -c6-)
-    wallpaperBase64=$(plutil -extract AllSpacesAndDisplays xml1 -o - "${wallpaper_store_path}" | awk '/<data>/,/<\/data>/' | xargs | tr -d " " | tr "<" "\n" | head -2 | tail -1 | cut -c6-)
+	loggedInUser=$(/usr/bin/stat -f%Su /dev/console)
+	wallpaper_store_path="/Users/${loggedInUser}/Library/Application Support/com.apple.wallpaper/Store/Index.plist"
+	screenSaverBase64=$(plutil -extract AllSpacesAndDisplays xml1 -o - "${wallpaper_store_path}" | awk '/<data>/,/<\/data>/' | xargs | tr -d " " | tr "<" "\n" | tail -2 | head -1 | cut -c6-)
+	wallpaperBase64=$(plutil -extract AllSpacesAndDisplays xml1 -o - "${wallpaper_store_path}" | awk '/<data>/,/<\/data>/' | xargs | tr -d " " | tr "<" "\n" | head -2 | tail -1 | cut -c6-)
 	getStarterVariables
 }
 
@@ -63,19 +63,19 @@ function createIndexPlist() {
 function killWallpaperAgent() {
 	# Kill the wallpaperAgent to refresh and apply the screen saver/wallpaper settings.
 	killall WallpaperAgent
-    WAL_IMGS=($(ls -d /Users/mymac/Pictures/*))
-    SEC=`date +%S`
-    I=$((SEC%$(echo ${#WAL_IMGS[@]})+1))
-    osascript -e "
-    tell application \"System Events\"
-	    tell every desktop
-		    set picture to \"${WAL_IMGS[$I]}\"
+	WAL_IMGS=($(ls -d /Users/mymac/Pictures/*))
+	SEC=`date +%S`
+	I=$((SEC%$(echo ${#WAL_IMGS[@]})+1))
+	osascript -e "
+	tell application \"System Events\"
+		tell every desktop
+  		set picture to \"${WAL_IMGS[$I]}\"
 	    end tell
-    end tell"
-    wal -qni ${WAL_IMGS[$I]}
+	end tell"
+	wal -qni ${WAL_IMGS[$I]}
 }
 
-function showVariables(){
+function showVariables() {
 	echo "screenSaverBase64: ${screenSaverBase64}"
 	echo "wallpaperBase64: ${wallpaperBase64}"
 	echo "$(date) - Setting screen saver settings..."
