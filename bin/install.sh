@@ -98,6 +98,9 @@ if [[ $YN = y ]] ; then
     git clone http://github.com/possatti/pokemonsay &>> $INSTLOG
     cd pokemonsay
     ./install.sh &>> $INSTLOG
+
+    pipx install pywal
+    pipx ensurepath
     echo -e "$COK - Installed."
 fi
 
