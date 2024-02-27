@@ -121,10 +121,6 @@ if [[ $(uname -m) == 'arm64' ]]; then
     echo -en "$COK - A bootplug to match the binary format so that yabai can inject code into the Dock of arm64 binaries."
 fi
 
-# Enable services
-yabai --start-service
-skhd --start-service
-
 # Write settings
 source $BIN/parse-plist
 source $BIN/write.sh
@@ -134,7 +130,11 @@ brew bundle dump
 parse-plist > parse-plist
 sudo ln -s /Users/$USER/Documents /Users/$USER/Documents-ln
 sudo ln -s /Users/$USER/Downloads /Users/$USER/Downloads-ln
-sudo ln -s /Users/$USER/ /Users/$USER/mymac-ln
+sudo ln -s /Users/$USER/ /Users/$USER/$USER-ln
+
+# Enable services
+yabai --start-service
+skhd --start-service
 
 # Script is done
 echo -e "$CNT - Script had completed!"
