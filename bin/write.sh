@@ -3,6 +3,7 @@
 gcc /Users/$USER/bin/cube.c -o /Users/$USER/bin/cube
 cat << EOF >> ~/.zshrc
 export PATH="\$PATH:/Users/$USER/bin"
+
 bash /Users/$USER/bin/changeWallpaper.sh
 neofetch
 TMOUT=900
