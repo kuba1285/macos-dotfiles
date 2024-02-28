@@ -7,10 +7,10 @@ bash /Users/$USER/bin/changeWallpaper.sh
 neofetch
 TMOUT=900
 TRAPALRM() {
-MODELS=($(ls -d /Users/$USER/bin/models/*))
-SEC=`date +%S`
-I=$((SEC%$(echo ${#MODELS[@]})+1))
-3d-ascii-viewer ${WAL_IMGS[$I]}
+MODELS=(\$(ls -d /Users/$USER/bin/models/*))
+SEC=\`date +%S\`
+I=\$((SEC%\$(echo \${#MODELS[@]})+1))
+3d-ascii-viewer \${MODELS[\$I]}
 }
 EOF
 
