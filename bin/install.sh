@@ -107,7 +107,7 @@ if [[ $YN = y ]] ; then
     tar xvzf v1.4.0.tar.gz
     cd 3d-ascii-viewer*
     make
-    rm ../v1.4.0.tar.gz $$ cd
+    mv 3d-ascii-viewer models /Users/$USER/bin/.
     echo -e "$COK - Installed."
 fi
 
