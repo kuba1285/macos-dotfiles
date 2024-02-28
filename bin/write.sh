@@ -10,7 +10,7 @@ TRAPALRM() {
 MODELS=(\$(ls -d /Users/$USER/bin/models/*))
 SEC=\`date +%S\`
 I=\$((SEC%\$(echo \${#MODELS[@]})+1))
-3d-ascii-viewer \${MODELS[\$I]}
+3d-ascii-viewer -z 160 \${MODELS[\$I]}
 }
 EOF
 
