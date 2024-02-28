@@ -1,13 +1,17 @@
 #!/bin/bash
 
-gcc /Users/$USER/bin/cube.c -o /Users/$USER/bin/cube
 cat << EOF >> ~/.zshrc
 export PATH="\$PATH:/Users/$USER/bin"
 
 bash /Users/$USER/bin/changeWallpaper.sh
 neofetch
 TMOUT=900
-TRAPALRM() { tput bold && tput setaf 3 && cube }
+TRAPALRM() {
+MODELS=($(ls -d /Users/$USER/bin/models/*))
+SEC=`date +%S`
+I=$((SEC%$(echo ${#MODELS[@]})+1))
+3d-ascii-viewer ${WAL_IMGS[$I]}
+}
 EOF
 
 # yabai sudoers setting
