@@ -22,7 +22,7 @@ INSTLOG="$BIN/install.log"
 ######
 
 # set some colors
-set_colors() {
+function set_colors() {
     if [ -t 1 ]; then
         RED=$(tput setaf 1)
         GREEN=$(tput setaf 2)
@@ -41,7 +41,7 @@ set_colors() {
 }
 
 # function that would show a progress bar to the user
-show_progress() {
+function show_progress() {
     while ps | grep $1 &> /dev/null ; do
         echo -n "."
         sleep 2
@@ -50,7 +50,7 @@ show_progress() {
     sleep 2
 }
 
-wait_yn(){
+function wait_yn(){
     YN="xxx"
     while [ $YN != 'y' ] && [ $YN != 'n' ] ; do
         read -p "$1 [y/n]" YN
