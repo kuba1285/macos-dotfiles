@@ -13,7 +13,6 @@
 # 2. Launch Terminal from the Utilities menu.
 # 3. Run the command 'csrutil disable'.
 # 4. Restart your computer.
-# 5. Restart your computer.
 
 # Define variables
 BIN=$(cd $(dirname $0); pwd)
