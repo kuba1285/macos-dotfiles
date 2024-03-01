@@ -91,12 +91,12 @@ if ! type brew &> /dev/null ; then
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &>> $INSTLOG
     show_progress $!
     echo "${GREEN}OK${RESET} - Installed."
+
+    # Homebrew path setting
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 else
     echo "${CYAN}NOTE${RESET} - Since Homebrew is already installed, skip this phase and proceed."
 fi
-
-# Homebrew path setting
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 
 # Install app from Brewfile
 wait_yn "${YELLOW}ACITION${RESET} - Would you like to install app from Brewfile?"
