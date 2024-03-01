@@ -138,7 +138,7 @@ source $BIN/parse-plist
 source $BIN/write.sh
 
 # Generate miscelenaeous file
-brew bundle dump
+brew bundle dump --force
 parse-plist > parse-plist
 sudo ln -s /Users/$USER/Documents /Users/$USER/Documents-ln
 sudo ln -s /Users/$USER/Downloads /Users/$USER/Downloads-ln
