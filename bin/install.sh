@@ -71,7 +71,7 @@ else
 fi
 
 # Install CLI for Xcode
-echo "${CYAN}NOTE${RESET} - Now installing CLI for Xcode."
+echo -n "${CYAN}NOTE${RESET} - Now installing CLI for Xcode."
 xcode-select --install &>> $INSTLOG
 show_progress $!
 echo "${GREEN}OK${RESET} - Installed."
@@ -79,6 +79,7 @@ echo "${GREEN}OK${RESET} - Installed."
 # Install rosetta
 wait_yn "${YELLOW}ACITION${RESET} - Would you like to install rosetta?"
 if [[ $YN = y ]] ; then
+    echo -n "${CYAN}NOTE${RESET} - Now installing rosetta."
     sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --install-rosetta --agree-to-license &>> $INSTLOG
     show_progress $!
     echo "${GREEN}OK${RESET} - Installed."
@@ -86,7 +87,7 @@ fi
 
 # Install homebrew
 if ! type brew &> /dev/null ; then
-    echo "${CYAN}NOTE${RESET} - Now installing Homebrew."
+    echo -n "${CYAN}NOTE${RESET} - Now installing Homebrew."
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &>> $INSTLOG
     show_progress $!
     echo "${GREEN}OK${RESET} - Installed."
@@ -100,14 +101,18 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 # Install app from Brewfile
 wait_yn "${YELLOW}ACITION${RESET} - Would you like to install app from Brewfile?"
 if [[ $YN = y ]] ; then
+    echo -n "${CYAN}NOTE${RESET} - Now installing Brewfile app."
     brew bundle install --file $BIN/Brewfile &>> $INSTLOG
+    show_progress $!
     echo "${GREEN}OK${RESET} - Installed."
 fi
 
 # Install custom app
 wait_yn "${YELLOW}ACITION${RESET} - Would you like to install custom app?"
 if [[ $YN = y ]] ; then
+    echo -n "${CYAN}NOTE${RESET} - Now installing custom app."
     source $BIN/custom.sh
+    show_progress $!
     echo "${GREEN}OK${RESET} - Installed."
 fi
 
