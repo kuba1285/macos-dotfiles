@@ -105,6 +105,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias grep='grep --color=auto'
+alias sed='gsed'
 alias ls='lsd'
 alias python="python3"
 alias pip="pip3"
