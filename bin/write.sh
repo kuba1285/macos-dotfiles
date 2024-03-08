@@ -3,7 +3,7 @@
 cat << EOF >> ~/.zshrc
 export PATH="\$PATH:/$HOME/bin"
 
-neofetch
+pokefetch
 TMOUT=900
 TRAPALRM() {
 MODELS=(\$(ls -d /$HOME/bin/models/*))
