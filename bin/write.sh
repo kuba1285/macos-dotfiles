@@ -1,13 +1,12 @@
 #!/bin/bash
 
 cat << EOF >> ~/.zshrc
-export PATH="\$PATH:/Users/$USER/bin"
+export PATH="\$PATH:/$HOME/bin"
 
-bash /Users/$USER/bin/changeWallpaper.sh
 neofetch
 TMOUT=900
 TRAPALRM() {
-MODELS=(\$(ls -d /Users/$USER/bin/models/*))
+MODELS=(\$(ls -d /$HOME/bin/models/*))
 SEC=\`date +%S\`
 I=\$((SEC%\$(echo \${#MODELS[@]})+1))
 3d-ascii-viewer -z 120 \${MODELS[\$I]}
