@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cat << EOF >> ~/.zshrc
-export PATH="\$PATH:/$HOME/bin"
+export PATH="\$PATH:$HOME/bin"
 
 pokefetch
 TMOUT=900
