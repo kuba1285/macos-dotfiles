@@ -121,7 +121,7 @@ if [[ $YN = y ]] ; then
     echo "${CYAN}NOTE${RESET} - Copying config files..."
 
     # copy the configs directory
-    cp -rT $PARENT/.[^.]* ~/ &>> $INSTLOG
+    cp -rT $PARENT/. ~/ &>> $INSTLOG
     cp $PARENT/src/* /Users/$USER/bin/
     echo "${GREEN}OK${RESET} - Installed."
 fi
