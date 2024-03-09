@@ -14,4 +14,4 @@ tar xvzf v1.4.0.tar.gz
 cd 3d-ascii-viewer*
 make
 find ./models -name "*.mtl" -type f | xargs rm
-mv ./models /Users/$USER/bin/.
+mv 3d-ascii-viewer models /Users/$USER/bin/.
