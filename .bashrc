@@ -1,3 +1,12 @@
+function command_not_found_handler(){
+	echo -e "\e[31m	▄▄▌ ▐ ▄▌ ▄▄▄· .▄▄ · ▄▄▄▄▄▄▄▄ .·▄▄▄▄  \n" \
+			"	██· █▌▐█▐█ ▀█ ▐█ ▀. •██  ▀▄.▀·██▪ ██ \n" \
+			"	██▪▐█▐▐▌▄█▀▀█ ▄▀▀▀█▄ ▐█.▪▐▀▀▪▄▐█· ▐█▌\n" \
+			"	▐█▌██▐█▌▐█ ▪▐▌▐█▄▪▐█ ▐█▌·▐█▄▄▌██. ██ \n" \
+			"	 ▀▀▀▀ ▀▪ ▀  ▀  ▀▀▀▀  ▀▀▀  ▀▀▀ ▀▀▀▀▀• \n"
+	return 127
+}
+
 cheatsh() { curl "http://cheat.sh/$1"; }
 eval "$(starship init $(ps -p $$ -o ucomm=))"
 alias ls="eza --icons --git"
