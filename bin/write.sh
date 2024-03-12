@@ -1,7 +1,7 @@
 #!/bin/bash
 
-grep -q "TMOUT=900" ~/.zshrc ||
-cat << EOF >> ~/.zshrc
+grep -q "TMOUT=900" ~/.bashrc ||
+cat << EOF >> ~/.bashrc
 export PATH="\$PATH:$HOME/bin"
 
 pokefetch
