@@ -1,22 +1,15 @@
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-#PS1='[\u@\h \W]\$ '
-
-#export XFCE_WALLPAPER=$(grep -m 1 "last-image" ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml | awk -F'"' '{print $6}' | xargs -L 1)
-
-alias grep='grep --color=auto'
-alias ls='lsd'
+cheatsh() { curl "http://cheat.sh/$1"; }
+eval "$(starship init $(ps -p $$ -o ucomm=))"
+alias ls="eza --icons --git"
+alias la="eza -a --icons --git"
+alias ll="eza -aahl --icons --git"
+alias lt="eza -T -L 3 -a -I 'node_modules|.git|.cache' --icons"
+alias lta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less -r"
+alias vc='code' # gui code editor
 alias python="python3"
 alias pip="pip3"
-alias neofetch='neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"'
+alias pokefetch='neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"'
 alias clear='paclear -s 5 -c yellow'
-cheatsh() { curl "http://cheat.sh/$1"; }
-eval "$(starship init bash)"
 
 # Write from "Caveats" of 'brew (re)install python3'.
 # Python3
