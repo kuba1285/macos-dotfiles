@@ -7,7 +7,7 @@ function command_not_found_handler(){
 	return 127
 }
 
-cheatsh() { curl "http://cheat.sh/$1"; }
+function cheatsh() { curl "http://cheat.sh/$1"; }
 eval "$(starship init $(ps -p $$ -o ucomm=))"
 alias ls="eza --icons --git"
 alias la="eza -a --icons --git"
