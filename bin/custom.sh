@@ -9,6 +9,11 @@ pipx install pywal
 pipx ensurepath
 
 cd
+git clone https://github.com/Nellousan/px2ansi.git
+cd px2ansi
+pipx install .
+
+cd
 wget https://github.com/autopawn/3d-ascii-viewer/archive/refs/tags/v1.4.0.tar.gz
 tar xvzf v1.4.0.tar.gz
 cd 3d-ascii-viewer*
