@@ -11,7 +11,6 @@ alias lta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less
 alias vc='code' # gui code editor
 alias python="python3"
 alias pip="pip3"
-alias pokefetch='neowofetch --gap -30 --ascii "$(fortune -s | pokemonsay -w 30)"'
 alias clear='paclear -s 5 -c yellow'
 
 # Write from "Caveats" of 'brew (re)install python3'.
