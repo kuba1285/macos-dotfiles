@@ -4,7 +4,7 @@ grep -q "TMOUT=900" ~/.bashrc ||
 cat << EOF >> ~/.bashrc
 export PATH="\$PATH:$HOME/bin"
 
-pokefetch
+neowofetch --gap -30 --ascii "\$(fortune -s | pokemonsay -w 30)"
 TMOUT=900
 TRAPALRM() {
 MODELS=(\$(ls -d $HOME/bin/models/*))
